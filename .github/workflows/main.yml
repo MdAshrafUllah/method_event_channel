@@ -40,7 +40,7 @@ jobs:
         with:
           artifacts: "build/app/outputs/flutter-apk/app-release.apk"
 
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.TOKEN }}
           tag: v1.0.${{ github.run_number }}
           allowUpdates: true
           name: Release v1.0.${{ github.run_number }}
